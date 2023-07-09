@@ -603,7 +603,7 @@ let sorted = false
 
 sortBtn.addEventListener('click', function(e) {
     e.preventDefault()
-
+  
     displayMoviments(currentAcount.movements, !sorted)
     sorted = !sorted
 })
