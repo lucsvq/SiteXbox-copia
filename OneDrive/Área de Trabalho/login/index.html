@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <div id="modal">
+            <div id="login-title">
+                Login
+            </div>
+            <div id="inputs">
+                <input type="text" class="btns" placeholder="User" id="userBtn">
+                <input type="email" class="btns" placeholder="Email" id="emailBtn">
+                <input type="password" class="btns" placeholder="Password" id="senhaBtn">
+            </div>
+            <div id="invalida">
+                <h5 id="inval"></h5>
+            </div>
+            <div>
+                <input type="button" value="Login" class="btns" id="login-btn" onclick="login()">
+            </div>
+            <div id="conta">
+                <h3>
+                    Não tem uma conta? <span onclick="criarConta()">crie uma</span> 
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="scriptLogin.js"></script>
+</body>
+</html>

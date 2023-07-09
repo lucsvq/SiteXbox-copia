@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444;
+    background-color: #f3f3f3;
+    height: 100vh;
+    padding: 2rem;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.title_header {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.img-logo {
+    width: 50px;
+    margin-left: 80px;
+}
+
+.login_input {
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    text-align: center;
+    background-color: white;
+    color: #444;
+}
+
+.login_button {
+    font-size: 23px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.title_date {
+    color: #888;
+}
+
+.app {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+main {
+    max-width: 1000px;
+    margin: 4rem auto;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.info_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: white;
+    overflow: scroll;
+    width: 570px;
+    height: 470px;
+    border-radius: 10px;
+}
+
+.moviments_type {
+    background-color: #9be15d;
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+
+.moviments_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #eee;
+}
+
+.moviments_type-deposit {
+    background-color: #9be15d;
+}
+
+.moviments_type-withdrawal {
+    background-color: #ff585f;
+}
+
+.movements__value {
+    margin-left: auto;
+}
+
+.movements__date {
+    margin-left: 25px;
+}
+
+.operation-pai {
+    display: flex;
+    flex-direction: column;
+}
+
+.operation {
+    background-color: orange;
+    width: 350px;
+    height: 90px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.operation_request {
+    background-color: #9be15d;
+}
+
+.operation_close {
+    background-color: #ff585f;
+}
+
+.operation:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+
+.form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input {
+    width: 130px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input_display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form_button {
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.sumary {
+    display: flex;
+    margin-top: 30px;
+}
+
+.sumary_value {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.sumary_label:not(:first-child) {
+    margin-left: 20px;
+}
+
+.sumary_label {
+    font-size: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.sumary_value-in {
+    color: #9be15d;
+}
+
+.sumary_value-out {
+    color: #ff585f;
+}
+
+.sumary_value-interest {
+    color: #9be15d;
+}
+
+.sumary_pai {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoff {
+    margin-top: 30px;
+}
+
+.sumary_label-sort {
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>banco</title>
+</head>
+<body>
+    <header>
+       <p class="title_header">Log in to get started</p>
+       <img src="logo1.png" alt="" class="img-logo">
+       <form class="login">
+        <input type="text"  class="login_input login_input-user" placeholder="user">
+        <input type="password" class="login_input login_input-pin" placeholder="pin">
+        <button class="login_button">→</button>
+       </form>
+    </header>
+    <main>
+        <div class="info_main">
+            <div>
+                <h2>Current Balance</h2>
+                <p class="title_date">As of <span class="date">30/06/2023, 16:21</span></p>
+            </div>
+            <h1 class="saldo">
+                25 952,59 €
+            </h1>
+        </div>
+        <div class="app">
+            <section>
+                <div class="moviments_row">
+                    <div class="moviments_type moviments_type-deposit">8 deposits</div>
+                    <div class="movements__date">12/03/2020</div>
+                    <div class="movements__value">1300,00 €</div>
+                </div>
+                <div class="moviments_row">
+                    <div class="moviments_type moviments_type-withdrawal">8 withdrawal</div>
+                    <div class="movements__date">12/03/2020</div>
+                    <div class="movements__value">-300,00 €</div>
+                </div>
+                
+            </section>
+            <div class="operation-pai">
+                <div class="operation">
+                    <h2>Transfer money</h2>
+                    <form class="form">
+                        <div class="input_display">
+                            <input type="text" class="input input_transfer input_transfer-to">
+                            <label>Transfer to</label>
+                        </div>
+                        <div class="input_display">
+                            <input type="number" class="input input_transfer input_transfer-amount">
+                            <label>Amount</label>
+                        </div>
+                        <button class="form_button form_button-transfer">→</button>
+                    </form>
+                </div>
+                <div class="operation operation_request">
+                    <h2>Request loan</h2>
+                    <form class="form">
+                        <div class="input_display">
+                            <input type="number" class="input input_request">
+                            <label>Amount</label>
+                        </div>
+                        <button class="form_button form_button-request">→</button>
+                    </form>
+                </div>
+                <div class="operation operation_close">
+                    <h2>Close account</h2>
+                    <form class="form">
+                        <div class="input_display">
+                            <input type="text" class="input input_close input_close-user">
+                            <label>Confirm USer</label>
+                        </div>
+                        <div class="input_display">
+                            <input type="number" class="input input_close input_close-pin">
+                            <label>Confirm Pin</label>
+                        </div>
+                        <button class="form_button form_button-close">→</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sumary_pai">
+            <div class="sumary">
+                <p class="sumary_label">In</p>
+                <p class="sumary_value sumary_value-in">0000 €</p>
+                <p class="sumary_label">Out</p>
+                <p class="sumary_value sumary_value-out">0000 €</p>
+                <p class="sumary_label">Interest</p>
+                <p class="sumary_value sumary_value-interest">0000 €</p>
+                <p class="sumary_label sumary_label-sort">↓ SORT</p>
+            </div>
+            <div class="logoff">
+                <p>You will be logged out in <span class="timer"> 00:00</span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
